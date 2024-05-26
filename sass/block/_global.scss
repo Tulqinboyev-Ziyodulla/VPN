@@ -1,0 +1,99 @@
+.global {
+    margin-top: 150px;
+
+    .global__text {
+        text-align: center;
+
+        .on {
+            color: $bg-dark;
+            font-size: 35px;
+            font-weight: 500;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .of {
+            color: $bg-py;
+            font-size: 16px;
+            max-width: 550px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+
+    .network {
+
+        .map {
+            width: 100%;
+            margin-top: 50px;
+            min-height: 600px;
+            border-radius: 10px;
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .global {
+
+        .network {
+
+            .map {
+                width: 70%;
+                min-height: 300px;
+                margin-left: 150px;
+            }
+        }
+    }
+
+    .icon {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    .global {
+
+        .network {
+
+            .map {
+                width: 500px;
+                min-height: 300px;
+                margin: auto;
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .icon {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .global {
+
+        .network {
+
+            .map {
+                width: 300px;
+                min-height: 300px;
+                margin: auto;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .icon {
+        flex-direction: column;
+        margin: auto;
+    }
+}

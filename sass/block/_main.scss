@@ -1,0 +1,111 @@
+.main {
+
+    .desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 170px;
+        margin-top: 100px;
+    
+        .desc__text {
+    
+            .many {
+                font-size: 35px;
+                font-weight: 500;
+                color: $bg-dark;
+                max-width: 380px;
+            }
+    
+            .have {
+                font-size: 16px;
+                font-weight: 400;
+                color: $bg-py;
+                max-width: 400px;
+                margin-top: 20px;
+                line-height: 30px;
+            }
+    
+            .desc__title {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 15px;
+
+                img {
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+    
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $bg-py;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .main {
+        
+        .desc {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+
+            .desc__img {
+                margin-top: 50px;
+            }
+
+            .desc__text {
+
+                .desc__title {
+                    margin-left: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        
+        .desc {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+
+            .desc__img {
+                margin-top: 50px;
+            }
+
+            .desc__text {
+
+                .many {
+                    font-size: 20px;
+                    max-width: 200px;
+                    margin: auto;
+                }
+
+                .have {
+                    font-size: 14px;
+                    max-width: 250px;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+
+                .desc__title {
+                    margin: auto;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

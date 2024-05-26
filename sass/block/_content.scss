@@ -1,0 +1,234 @@
+.content {
+    margin-top: 50px;
+
+    .content__text {
+        text-align: center;
+
+        .are {
+            color: $bg-dark;
+            font-size: 35px;
+            font-weight: 500;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        .our {
+            color: $bg-py;
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+
+    .block {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .block__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            border: 2px solid #ddd;
+            width: 400px;
+            min-height: 230px;
+            border-radius: 10px;
+            margin-top: 60px;
+            transition: .5s;
+
+            &:hover {
+                border: 2px solid $bg-red;
+                cursor: pointer;
+            }
+
+            .all {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .all__img {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .text {
+
+                        .to {
+                            color: $bg-dark;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+
+                        .best {
+                            color: $bg-py;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+
+                .all__text {
+                    display: flex;
+                    gap: 11px;
+
+                    p {
+                        color: $bg-py;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .very {
+                margin-top: 20px;
+                color: $bg-dark;
+                font-size: 16px;
+                font-weight: 400;
+                max-width: 340px;
+                margin: auto;
+            }
+        }
+    }
+
+    .swipper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .swipper__img {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .swipper__btn {
+            display: flex;
+            align-items: center;
+
+            .img {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1200px) {
+    .content {
+
+        .content__text {
+
+            .are {
+                font-size: 30px;
+            }
+
+            .our {
+                max-width: 400px;
+            }
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            .block__card {
+                margin: auto;
+            }
+        }
+    }
+
+    .swipper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .swipper__btn {
+            margin: auto;
+        }
+    }
+}
+
+
+@media (max-width:500px) {
+    .content {
+
+        .content__text {
+
+            .are {
+                font-size: 20px;
+            }
+
+            .our {
+                max-width: 250px;
+            }
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            .block__card {
+                width: 300px;
+                margin: auto;
+            }
+        }
+    }
+
+    .swipper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .swipper__btn {
+            margin: auto;
+        }
+    }
+}
+
+
+@media (max-width:350px) {
+    .content {
+
+        .content__text {
+
+            .are {
+                font-size: 20px;
+            }
+
+            .our {
+                max-width: 250px;
+            }
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            .block__card {
+                width: 250px;
+                margin: auto;
+
+                .very {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .swipper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .swipper__btn {
+            margin: auto;
+        }
+    }
+}
